@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpsimywe6ky1w"]
+
+[ext_resource type="Script" path="res://Scripts/HTTPRequest.gd" id="1_lfp1v"]
+[ext_resource type="PackedScene" uid="uid://p76n2mnmbjc5" path="res://Assets/Models/room.blend" id="3_f8lvu"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_lfp1v")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 1.8, 1.539)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.798236, -0.310573, 0.516104, 7.16378e-16, 0.856826, 0.515606, -0.602345, -0.411576, 0.683949, 1.55602, 1.30694, 0)
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[node name="Room" parent="." instance=ExtResource("3_f8lvu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.08165e-12, 2.08165e-12)
+
+[node name="Title" type="Label3D" parent="Room"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.5, -2)
+text = "PLaceholder
+"
+font_size = 100
+vertical_alignment = 0

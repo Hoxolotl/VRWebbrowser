@@ -10,11 +10,25 @@ config_version=5
 
 [application]
 
-config/name="Vr Webbrowser"
-run/main_scene="res://Scenes/HttpRequest.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
+config/name="VRBrowser"
+run/main_scene="res://Scenes/3DWeb.tscn"
+config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
 
-project/assembly_name="Vr Webbrowser"
+project/assembly_name="VRBrowser"
+
+[filesystem]
+
+import/fbx/enabled=false
+import/blender/enabled.web=true
+import/fbx/enabled.web=true
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true
+
+[xr]
+
+shaders/enabled=true

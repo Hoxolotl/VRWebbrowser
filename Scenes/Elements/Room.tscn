@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://2alhgu83p48t"]
+
+[ext_resource type="PackedScene" uid="uid://p76n2mnmbjc5" path="res://Assets/Models/room.blend" id="1_kon4a"]
+
+[node name="Room" type="Node3D"]
+
+[node name="room" parent="." instance=ExtResource("1_kon4a")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.103, 2.08165e-12, 2.08165e-12)
